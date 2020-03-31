@@ -1,26 +1,34 @@
 PODS:
-  - RxCocoa (5.0.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.0.1):
-    - RxSwift (~> 5)
+  - Alamofire (5.0.2)
+  - CoreFramework (0.0.1):
+    - Moya/RxSwift
+    - RxSwift
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - RxSwift (5.0.1)
 
 DEPENDENCIES:
-  - RxCocoa
-  - RxSwift
+  - CoreFramework (from `./CoreFramework`)
 
 SPEC REPOS:
   trunk:
-    - RxCocoa
-    - RxRelay
+    - Alamofire
+    - Moya
     - RxSwift
 
+EXTERNAL SOURCES:
+  CoreFramework:
+    :path: "./CoreFramework"
+
 SPEC CHECKSUMS:
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  CoreFramework: 5e21adec80d0fc44e987dc9c97df41051c70d9c1
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 8489c0778eae37363954b9fb35cce35c208f0d8a
+PODFILE CHECKSUM: b3b958fe5b8499d9661703adb91547051aa427f7
 
 COCOAPODS: 1.8.4

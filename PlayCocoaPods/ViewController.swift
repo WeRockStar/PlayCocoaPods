@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import CoreFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let service = GithubService()
+        service.doService()
+            .debug()
+            .subscribe()
     }
 
 
